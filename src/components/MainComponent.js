@@ -6,6 +6,7 @@ import Footer from './FooterComponent';
 import CampsiteInfo from './CampsiteInfoComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
+import About from './AboutComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { CAMPSITES } from '../shared/campsites';
 import { COMMENTS } from '../shared/comments';
@@ -55,6 +56,7 @@ constructor(props) {
                     />} />
                     <Route path='/directory/:campsiteId' component={CampsiteWithId} />
                     <Route exact path='/contactus' component={Contact} />
+                    <Route exact path='/aboutus' render={()=><About partners={this.state.partners} />} />
                     <Redirect to='/home' />
               </Switch>
               <Footer />
