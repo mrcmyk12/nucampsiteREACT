@@ -77,11 +77,7 @@ class Header extends Component {
                                     <i className='fa fa-address-card fa-lg' />Contact Us
                                 </NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className='nav-link' to='/home'>
-                                    <i className='fa fa-home fa-lg' />Home
-                                </NavLink>
-                            </NavItem>
+                           
                         </Nav>
                         <span className="navbar-text ml-auto">
                             <Button outline onClick={this.toggleModal}>
