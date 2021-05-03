@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, Breadcrumb, BreadcrumbItem,
 Button, Modal, ModalBody, ModalHeader  } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { LocalForm, Control, Errors, Field } from 'react-redux-form';
+import { LocalForm, Control, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
@@ -18,7 +18,7 @@ function RenderCampsite({campsite}) {
         <FadeTransform
             in
             transformProps={{
-                exitTransform: 'scale(0.5) translateY(50%)'
+                exitTransform: 'scale(0.25) translateY(150%)'
             }}>
             <Card >
                 <CardImg top src={baseUrl + campsite.image} alt={campsite.name} />
